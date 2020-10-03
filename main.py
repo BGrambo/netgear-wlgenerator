@@ -13,7 +13,7 @@ def wordpicker1():
   out = open('out.txt','w')
   for x in adjectives:
     for y in nouns:
-      z = (str(x.capitalize()+y.capitalize())+'\n')
+      z = (str(x+y)+'\n')
       #print(z)
       out.write(str(z))
 
@@ -21,7 +21,7 @@ def wordpicker1():
 def wordpicker2():
   for x in adjectives:
     for y in nouns:
-      z = (str(x.capitalize()+y.capitalize()))
+      z = (str(x+y))
       i = 0
       while (i < 999 + 1):
         #print(z+str(i).zfill(3))
